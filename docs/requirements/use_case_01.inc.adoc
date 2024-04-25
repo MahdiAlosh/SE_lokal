@@ -1,0 +1,84 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
+
+
+== Use-Case: UC01 Suchergebnisse ermitteln
+
+=== Kurzbeschreibung
+//<Kurze Beschreibung des Use Case>
+Dieser Use Case ermöglicht es dem Benutzer, durch die Eingabe eines Unternehmensnamen eine Liste relevanter Suchergebnisse zu erhalten.
+
+//Spätere Erweiterung des Usecase...
+// und eines spezifischen Schlüsselwortes (z.B. "Umsatz") ein hervorgehobenes Informationskästchen mit den direkten, relevanten Informationen zu diesem Aspekt des Unternehmens zu erhalten.
+
+
+
+
+=== Kurzbeschreibung der Akteure
+
+==== Mitarbeiter der Telekom MMS
+Benötigen detaillierte Informationen zu der Firma einer Kundenanfrage.
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+Der Telekom MMS Mitarbeiter muss in der Anwendung angemeldet sein.
+
+
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+. Der Use Case beginnt, wenn der Telekom MMS Mitarbeiter einen Unternehemnsnamen als Suchbegriff eingibt.
+
+//Akteur gibt Suchwort ein 
+//optinal ein zusätzliches Schlüsselwort
+. Die Anwendung zeigt eine Liste von relevanten Unternehmensnamen an.
+. Der Mitarbeiter wählt ein Ergebnis aus oder verfeinert seine Suche.
+. Der Use Case ist abgeschlossen.
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+
+
+==== Keine Ergebnisse gefunden
+Wenn der Telekom MMS Mitarbeiter im Schritt 1 des Standardablauf einen ergebnislosen Suchbegriff eingibt, dann
+. zeigt das System eine Meldung, dass keine Ergebnisse gefunden wurden
+. Der Use Case wird im Schritt 1 wiederholt
+
+//=== Unterabläufe (subflows)
+//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+
+//==== <Unterablauf 1>
+//. <Unterablauf 1, Schritt 1>
+//. …
+//. <Unterablauf 1, Schritt n>
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+
+==== Telekom MMS Mitarbeiter sucht nach spezifsichem Unternehmen
+. Ein Mitarbeiter gibt "Telekom" in das Suchfeld ein
+. Das System zeigt eine Liste von Unternehmen mit "Telekom" im Namen an
+
+// === Mitarbeiter sucht nach Unternehmensinformation mit Schlüsselwort
+//. Ein Mitarbeiter gibt "Telekom Umsatz" in das Suchfeld ein.
+//. Das System zeigt den Umsatz der Deutschen Telekom AG sowie eine Liste von Unternehmen mit dem Namen "Telekom" an.
+
+=== Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+
+==== Erfolgreiche Suche
+Der Benutzer erhält eine Liste von relevanten Suchergebnissen. Er kann sich dabei eines der Suchergebenisse, welcher seiner Suche passt genauer anzeigen lassen.
+//und bei Suche mit Schlüsselwort ein Kasten mit der Information zum Schlüsselwort Bsp."Umsatz"
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+
+==== Datenaktualität
+Die Suchergebnisse müssen stets aktuell und präzise sein.
+
+==== Usability
+Der Use Case gehört zu der grundlegenden Funktionalität des Systems und muss daher eine einfache Bedienbarkeit ermöglichen.
+
+==== Performance 
+Die Suche und Auflistung der relevanten Unternehmen muss innerhalb von 5 Sekundenn erfolgen.

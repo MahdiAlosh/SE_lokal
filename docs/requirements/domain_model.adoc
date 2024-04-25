@@ -1,0 +1,12 @@
+= Domain Model: {project-name}
+Johannes Hanko ; Hai Van Ngguyen ; Yannick Birnbaum ; Mateo Thürig ; Zakaria Lehmadi ; Ali Al Mahdi ; Sten Mende ; Marc-Leon Vogt
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Allgemeine Informationen
+In diesem Diagramm werden die wesentlichen Bestandteile des Projektes "{project-name}" anhand ihrer Rollen, Beziehungen und Daten dargestellt. Die Nutzer, also die Mitarbeiter der Telekom MMS, müssen sich mittels Email und Passwort anmmelden. Daraufhin können sie einen Suchbegriff eingeben, bekommen eine Reihe an möglichen Treffern vorgeschlagen und müssen dann einen davon auswählen. Anschließend werden wichtige Informationen zu dem ausgewählten Unternehmen angezeigt. Diese bestehen zu einem Teil aus internen Daten, welche beispielsweise in Excel-Dateien abgespeichert wurden und zum anderen Teil aus externen Daten, welche aus dem Internet (Wikipedia) gefiltert wurden.
+
+== UML - Klassendiagramm
+image::Domain_Model.png[]

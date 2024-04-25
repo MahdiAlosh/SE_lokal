@@ -1,0 +1,62 @@
+= Use-Case Model: {project-name}
+Johannes Hanko ; Hai Van Ngguyen ; Yannick Birnbaum ; Mateo Thürig ; Zakaria Lehmadi ; Ali Al Mahdi ; Sten Mende ; Marc-Leon Vogt
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Allgemeine Informationen
+// ...
+Use Cases sind eine technische Anwendung die uns dabei hilft die Interaktion eines Nutzers mit dem System zu simulieren. Dabei können die funktionale Anforderungen des Systems besser definiert und verstanden werden.
+
+== Identifizierte Use Cases
+// Liste aller identifizierten Use Cases (priorisiert)
+* *UC01*: Suchergebnisse ermitteln
+* *UC02*: Unternehmensinformationen anzeigen
+* *UC03*: Benutzer anmelden
+
+
+== Use Case Diagramm
+
+image::use_case_diagram_E07_unternehmensinformation.png[scale=70]
+
+// ...
+
+//Fügen Sie nachfolgend alle detaillierten Use-Cases per Include ein.
+//Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem use_case_01.inc.adoc Template basiert.
+
+////
+Mit `<<<` wird im PDF ein Seitenumbruch erzeugt.
+Zwischen `include::...` und dem darauf folgenden `<<<` muss sich eine Leerzeile befinden. Fehlt diese, werden unter Umständen die erste Überschriften aus der inkludierten Datei nicht korrekt übernommen.
+Ein `include` entfernt am Anfang und Ende eine möglich Leerzeile, was in Kombination mit `<<<` zu Fehlern führen kann.
+////
+
+<<<
+include::use_case_01.inc.adoc[]
+
+<<<
+include::use_case_02.inc.adoc[]
+
+<<<
+include::use_case_03.inc.adoc[]
+
+//<<<
+//include::use_case_04.inc.adoc[]
+
+//<<<
+//include::use_case_05.inc.adoc[]
+
+//<<<
+//include::use_case_06.inc.adoc[]
+
+//<<<
+//include::use_case_07.inc.adoc[]
+
+//<<<
+//include::use_case_08.inc.adoc[]
+
+//<<<
+//include::use_case_09.inc.adoc[]
+
+//<<<
+//include::use_case_10.inc.adoc[]

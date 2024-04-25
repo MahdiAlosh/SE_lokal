@@ -1,0 +1,187 @@
+# Erstes Arbeitsmeeting mit TMMS
+
+=== 0. Vorstellungsrunde
+Hai Van Nguyen
+Marc-Leon Vogt
+Yannick Birnbaum
+Mateo Thürig
+Ali Al Mahdi
+Zakaria Lehmadi
+Sten Mende
+Johannes Hanko (Wirtschaftsingeneurwesen)
+
+=== 1. Allgemeine Informationen
+
+ Arbeitgeber: Telekom MMS
+ Ansprechpartner: Herr Uwe Spiegel (uwe.spiegel@telekom.de)
+
+ Anwendung Technologien: Python, Werbeoberfläche mit Python Flask 
+
+Unser Ziel:
+ Webbasierte Anwendung zur Recherche von Unternehmensinformationen auf Basis von strukturierten internen Informationsquellen und internetbasierten Informationen
+
+ Zur Vereinfachung der Recherchen soll ein webbasierten Interface entwickelt werden, mit dem Ziel allgemeine und spezifische Informationen zu Unternehmen aus internetbasierten und anderen Datenquellen zusammenzufassen und strukturiert anzuzeigen
+
+ Datenquellen die genutzt werden sollen:
+Wikipedia (Unternehmens InfoBox)
+Excel Tabelle (Struktur: Unternehmensname, Projekt, Umsatz, Portfolio, Branche)
+Internet News Rechereche (Stichpunktartige Informationen, semantisch)
+
+Anforderungen Interface:
+ Eingabe: 
+ Suchverfahren mit zwei Schritten 
+ Schritt 1
+Einfaches Suchfeld für Firma (google Style) 
+ Schritt 2
+Vertiefung der Suche mit Stichworte (wieder einfaches Suchfeld)
+
+Ausgabe
+ Strukturierte Unternehmensinformation (Extrakt aus Wikipedia)
+ Strukturierte Übersicht Umsätze geclustert nach Jahr und Portfolio 
+Zusammenfassung News mit Link auf die Originalseite
+
+Technische und Organisatorische Rahmenbedinungngen 
+Umsetzung soll in Python und für die Weboberfläche mit Python Flask erfolgen. Weitere Bibliothek­ ken können bei Bedarf ergänzt werden.
+Anwendungen und Funktionen müssen ausreichend dokumentiert sein.
+Anwendung muss fehlertolerant und resilient sowohl gegen Bedienungsfehler als auch gegen tech­nische Fehler aufgebaut sein
+
+=== 2. Ergänzung von TMMS
+DIe idee dahinter: -> CHatGPT bildet eine ganz gunter Basis Grundlage, wir wolllen aber weiter in s Detail gehen
+
+.1. Schritt, Python lernen
+
+gibts im Internet Kaggle unter  ' https://www.kaggle.com/learn  ' -> Intro to Programming, Python, Pandas, Intro to SQL, Advanced SQL
+
+erster Teil ist die kurzer einarbeitung in python, eine bedienoberfläche erstellen mit framework flask -> mit chatgpt möglich
+
+eingabe prompt wie bei google-> firmenname eingeben  -> soll aus wikipedia rausgesucht werden und die Infobox daraus extrahieren
+
+fehlerredundanz bei WIkipedia und der Infobox (Angaben können in unterschiedlichen Werten angegeben sein) 
+
+unschärfe der Interpretation miteinberechnen
+
+fürs erste nur wikipedia
+
+Die Ausgabe soll in Tabelle-Form
+
+begleitende Dokumentation zu unserem Projekt, AUfschreiben eines Konzepts, Code soll dokumentiert werden, Kommentare Annotationen
+
+Fehlerdokumentation -> wenn sie stattfinden dokumentieren und dann resillient machen
+
+Anakonda-> Jupiter Lab /Notebooks, Spider ( aber auch in Anakonda integriert)
+
+erstmal im lokalen Bereichen bis sie gelauncht wird
+
+Im zweiten Halbjahr vllt Open Source Large Language Modellen?
+
+.3 Wichtige Fragen
+Gibt es bereits konkrete Vorstellungen (Oberflächendesign, ...)? -> gibt es dazu schon templates von TMMS und dürfen wir die nutzen ? (Irgendwelche Zugänge zu Aplikationen vvorhanden?
+
+Gibts ne Vorschreibung welche Programmierumgebung wir nutzen sollen ?
+
+festlegen was für quellen genutzt werden (news recherche zu allgemein?)
+
+Welche Arten von Unternehmensinformationen wollen Sie bei der Suche bekommen?
+
+Wer sind die Anwender für die Anwendung? nur für die Mitarbeiter der Telekom MMS
+
+Soll die Anwendung für alle Anwender Zugreifbar sein oder nur für autorisierte ?
+
+Wie soll die generelle Kommunikation während des Projektes ablaufen?
+
+Soll es neben der Dokumentation auch eine Bedinungsanleitung geben (Schulungsmaterial)?
+
+Gibt es bereits einen Server für die Umsetzung? - wie ist das Deployment geplant, Reglementierung bezüglich des Zugangs
+Nutzerverwaltung? Login?
+
+Wie können wir auf die interne Informationenquellen zugreifen ?
+
+Soll die Anwendung nur im lokalen Netzwerk erreichbar?
+Gibt es eine Zeitbeschränkung, die bei der Recherche berücksichtigt werden muss? Zeitliche Filterung
+
+wann wäre der nächste Termin mit Ihnen möglich?
+
+
+
+## 2. Meeting 
+
+Beginn 13:06 Uhr
+
+Stakeholder:
+- Mitarbeiter (Schwerpunk Vertrieb)
+- Angebots- und Auftragsmanagement (fachlich und Bereitstellung von Daten) AAM
+- IT-Abteilung (Betrieb)
+
+
+Server auf dem wir das ausführen sollen? 
+
+Sever würde bei Telekom MMS laufen 
+Zum testen würde VM von Uni  sehr gut sein
+
+System: Telekom Server (Linux), aber erstmal HTW VM (Linux Ubuntu)
+
+
+Zugriff auf Infos soll restriktiv sein soll sich mit Benutzernamen und Passwort anmelden 
+Login: registrieren im Self-Service
+
+
+
+Datenbanken?
+
+Ergebnisse nicht in Datenbank speichern 
+
+Erste Datenquelle InfoBox Wikipedia 
+
+Zweite Datenquelle strukturierte Excel Tabelle auslesen 
+
+Einladung Herrn Spiegel in das GitHub Projekt 
+
+Vorstellung der Übersicht über die Iterationsschritte
+Vorstellung des Repositorys vision.adoc
+
+Ende des Meetings 13:30 Uhr
+
+## 3. Meeting
+
+Beginn 13 Uhr
+
+Vorstellung der Use-Cases:
+
+Reine Anmeldung; eigene Anmelde Routine mit eigener Datenbank
+
+Erste Auflistung, wenn zum Beispiel Telekom: Telekom Deutschland, Österreich...
+
+Erweiterte Suche: 2. HJ mit geführtem Dialog Chat GPT, eigene Abfragenmaske und auch mit eigenen Quellen.
+
+Vorstellung Wireframes:
+
+Passt so
+
+Anmeldung: kein Passwort change oder so
+
+nur Login-Maske und im prozess verifizieren, saubere Authentifizierung
+
+Login über den ganzen Prozess der Nutzung Aufrecht erhalten
+
+weiterhin Dokumentation per E-Mail schicken
+
+Virtuelle Maschine Zugangsdaten besprechen im Team
+
+Nutzerkonten: im File ablegen oder DB, Passwort Verschlüsselung überlegen, Hashmap Verschlüsselung oder selbst... 
+
+Wireframes vom Grund ist gut und auch die Use-Cases sind gut
+
+Ausgabe: Normale Tabellenform
+
+ChatGPT als Programmierhilfe
+
+Graphische Visuallisierung als Übung
+
+Geomapping in Kaggle (bei Bedarf)
+
+Ende Meeting 13:20 Uhr
+
+## 4. Meeting
+
+12.01 13:30 Uhr
+

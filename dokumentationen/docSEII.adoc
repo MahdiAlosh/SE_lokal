@@ -1,0 +1,98 @@
+== 1. Teammeeting
+
+21.03.2024 15:10 Uhr
+
+Anwesende: Marc, Yannick, Ali, Zakaria, Haivi
+
+.1 Rollenverteilung
+
+ Johannes Hanko hat das Team zu diesem Semester verlassen. 
+ Ändereung der Teamaufstellung: 
+
+ Projektleitung: Hai Van
+ Requirements und Analyse: Mateo
+ Architektur: Marc & Yannick & Hai Van 
+ Tester: Sten 
+ Developer: Ali & Zakaria & Yannick & Sten
+
+.2 Stand
+
+Wir haben eine webbasierte Anwendung, in der wir nach Firmen auf Wikipedia suchen können. 
+Es gibt eine einfache Suchleiste und die Ergebnisse werden tabellarisch ausgegeben. 
+
+Unser Auftraggeber hat leider noch nicht unserern bisherigen Stand gesehen. 
+Er meldet sich leider auch nicht zurück.
+
+Aus früheren Meetings, könnten die nächsten Aufgaben sein:
+- Excel Dateien einarbeiten
+- Oberfläche überarbeiten
+- Informationen aus Internet News rausfiltern
+- Vertiefung der Suchanfragen mit Stichworten
+- testen gegen Bedienungs- und Technischefehler
+- dokumentation unser Anwendung und der Funktionen
+
+Meeting Ende: 16:27 Uhr
+
+== 1. Coachmeeting
+
+21.03.2024 15:30 Uhr
+
+Sollen wir unseren Arbeitgeber nochmals per E-Mail kontaktieren oder vllt auch mal anrufen?
+- Risiko ist dass der Kontakt nicht regelmäßig stattfinden können, und dass es in die falsche Richtung sich entwickelt
+- Lösung ist es einfach dort weiter zuentwicklen und wir annahmen aus früheren Meetings ziehen
+- Feedback dann im Nachhinein einholen
+
+Abgesehen von den Fehlern, welche auszubessern sind. Worauf sollen wir uns jetzt als nächsten fokussieren?
+- Iterationen weiter planen, Aufgaben stellen
+- bei der Implementierung alle irgendwie bisschen einbeziehen
+- Unittest Python Praktikum mitnehmen!
+- Beleg bisschen überarbeiten und vereinheitlichen
+- regelmäßig dem Auftraggeber den Prototypen zeigen
+- Prioritäten setzen
+
+Wie ist der Beleg ausgefallen? Wenige Anmerkungen nur
+- Vision -> Problemstatement in drei Teilstatements geschrieben -> sollte eigentlich ein ganzes Umfangreiches Problem sein
+- Stakeholder -> Gesetzgeber mit dem Datenschutz spielt eine Rolle
+- Im beleg erwähnen dass Abmelden kein Use Case ist -> vom Auftraggeber vorgegeben
+? Soll Anmeldung mit Cookie gespeichert werden oder wird automatisch abgemeldet und dann müssen sie neu anmelden ?
+- Begrifflichkeit der Mitarbeiter der Telekom TMMS -> das es identisch wird (in den UseCases) einfach Vereinheitlichen!
+- Use Case 1 muss vom Ablauf verfeinert werden, Verfeinerte Suche kann der Startpunkt sein mit Stichwörtern
+- Use Case 03 Abmelde Button muss raus! auch bei wesentlichen Szenarios die Abmeldung entfernen, Nachbedingungen
+- System Wide Req NFAR1 was ist hohe auslastung? in Zahlen angeben! und gerine Ausfallrate Zahlen !
+- nfap1 unter welchen bedingungen? weil was ist wenn wikipedia hängt?
+ anzeigen einer fehlermeldung nach 5 sekunden wenn daten z.B. nicht abgerufen werden können. 
+ Eingrenzen wie auslastbar das ist? Also wie viele leute können gleichzeitig eine suchanfrage starten? 
+ Vorraussetzung einer guten Netwerkbverbindung?
+ Die optimalen Bedingungen müssen ausgeschrieben werden, Suchanfragen cachen?
+- Glossar und Domain Modellen -> mehr Wörter aus der Fach Domaine des Kunden 
+- Entwurf und Architektur -> könnte bisschen asuführlciher sein also noch ein paar nfa einbauen
+- c4 diagramme -> unser system aufteilen und darstellen von front end , backend etc. 
+- test nur 2 konkrete Testdaten nehmen, unsere Tests sind mehrere Tests zusammen und konkrete Testdaten nehmen
+
+Meeting Ende: 16:20 Uhr
+
+== 2. Teammeeting
+
+Meeting Start: 15 Uhr
+
+Herr Spiegel antwortet noch immer nicht -> Prof. bescheid geben
+Momentanen Stand vergleichen
+Fehler beheben bezüglich Pull und Push
+Prof. Anke eine Mail schreiben, wegen Herrn Spiegel
+Allgemeinen Austausch zum Projekt
+
+-> Als nächstes Maßnahmen für die Qualität sichern, Tests machen
+Meeting Ende: 16:05 Uhr
+
+== 3. Teammeeting
+
+Start: 15:18
+
+Abewesende: Sten, Mateo
+
+Tests: 85% des Codes ist gedeckt mit Tests
+Development: wir veruchen jetzt die Suchvorschläge anzeigen zu lassen, noch nicht fertig aber dabei
+Architektur
+
+Dokumentation muss in jedem Bereich noch aktualisieren. 
+ Meeting Ende 16:00

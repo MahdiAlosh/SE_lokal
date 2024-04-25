@@ -1,0 +1,84 @@
+= System-Wide Requirements: {project-name}
+Johannes Hanko ; Hai Van Ngguyen ; Yannick Birnbaum ; Mateo Thürig ; Zakaria Lehmadi ; Ali Al Mahdi ; Sten Mende ; Marc-Leon Vogt
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Einführung
+In diesem Dokument werden die systemweiten Anforderungen für das Projekt Webbasierte Anwendung zur Recherche von Unternehmensinformationen spezifiziert ({project-system-name}). Die Gliederung erfolgt nach der FURPS+ Anforderungsklassifikation:
+
+* Systemweite funktionale Anforderungen (F),
+* Qualitätsanforderungen für Benutzbarkeit, Zuverlässigkeit, Effizienz und Wartbarkeit (URPS) sowie
+* zusätzliche Anforderungen (+) für technische, rechtliche, organisatorische Randbedingungen
+
+NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern mit dem System ergeben, sind als Use Cases in einem separaten Dokument festgehalten. [link:use-case_model.adoc[Hier finden Sie das Use Case-Modell]]
+
+
+== Systemweite funktionale Anforderungen
+//Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
+
+* SWFA-1: Das System muss sicherstellen, dass nur autorisierte Nutzer Zugriff auf die Anwendung haben. 
+** Zur Überprüfung werden Testkunden angelegt und versucht auf die jeweils anderen Daten zuzugreifen (manuell).
+
+
+== Qualitätsanforderungen für das Gesamtsystem
+//Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
+
+=== Benutzbarkeit (Usability)
+//Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
+* NFAU-1: Die Benutzeroberfläche soll intuitiv und benutzerfreundlich gestaltet sein.
+** Zur Überprüfung können die Mitarbeiter Feedback zu diesem Punkt geben.
+* NFAU-2: Die Anwendung soll in Deutsch verfügbar sein.
+** Die Mitarbeiter die diese Anwendung nutzen sind der Deutschensprache mächtig
+* NFAU-3: Text sollte aus 50cm Entfernung leicht lesbar sein.
+Zur Überprüfung wird ein Testnutzer einige Anwendungsfälle mit einer Bildschirmentfernung von mindestens 50cm durchführen.
+
+<<<
+
+=== Zuverlässigkeit (Reliability)
+// Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
+* NFAR-1: Das System soll eine geringe Ausfallrate aufweisen.
+* NFAR-2: Es darf keine falsche Email oder kein falsches Passwort angegeben werden.
+** Zur Überprüfung wird getestet, ob eine entsprechende Fehlermeldung ausgegeben wird.
+
+=== Effizienz (Performance)
+// Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
+* NFAP-1: Das Softwaresystem soll bei der Suchanfragen als auch bei der ausgabe der Unternehemnsinformationen nicht länger als 5 Sekunden benötigen.
+** Zur Überprüfung das System schickt eine Anfrage und nach 5 Sekundne gibt es eine Fehlermeldung mit einer kurzen Nachricht zurück.
+
+//Netzanbindung muss gewährleistet sein.
+
+//wird ein automatischer Test feststellen, ob alle Anforderungen innerhalb der gegebenen Zeit unter optimalen Bedingungen ablaufen.
+
+
+=== Wartbarkeit (Supportability)
+// Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
+* NFAS-1: Das System soll nach Abschluss des Sommersemesters 2024 von der IT-Abteilung der Telekom MMS fortgeführt werden.
+** Zur Sicherung des Verständnisses muss der Sourcecode ausführlich kommentiert werden.
+
+== Zusätzliche Anforderungen
+
+=== Einschränkungen
+//Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
+//* Ressourcenbegrenzungen
+//* zu nutzende Komponenten / Bibliotheken / Frameworks
+* Die Anwendung muss in Python und mit dem Framework Flask entwickelt 
+werden.
+* Die Verwaltung des Sourcecodes und der Dokumentation muss mittels GitHub erfolgen.
+* Das Testen soll auf einer der Virtual Machines der HTW erfolgen.
+//* Vorgaben für die Programmiersprache
+//* zu unterstützende Plattformen / Betriebssysteme
+* Die Anwendung muss im Telekom MMS System intergrierbar sein.
+//* Physische Begrenzungen für Hardware, auf der das System betrieben werden soll
+* Die Anwendung soll auf Standard Hardware betrieben werden.
+
+=== Interface Requirements
+* Die Benutzeroberfläche soll eine klare Struktur und einfache Navigation bieten.
+* Die Benutzeroberfläche soll auf verschiedene Bildschirmgrößen und Gerätetypen angepasst sein.
+
+
+=== Rechtliche Anforderungen
+//Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
+* Datenschutz
+** Es dürfen nur Öffentlich zugängliche Informationen bereitgestellt werden.

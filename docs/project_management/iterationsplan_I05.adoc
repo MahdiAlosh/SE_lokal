@@ -1,0 +1,101 @@
+= Iteration Plan I05: {project-name}
+Hai Van Nguyen s86039@stud.htw-dresden.de; Johannes Hanko s84268@stud.htw-dresden.de; Vorname3 Nachname3 <email3@domain.org>
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Meilensteine
+//Meilensteine zeigen den Ablauf der Iteration, wie z.B. den Beginn und das Ende, Zwischen-Meilensteine, Synchronisation mit anderen Teams, Demos usw.
+
+[%header, cols="3,1"]
+|===
+| Meilenstein | Datum
+
+| Beginn der Iteration | 22.01.2024
+| Ende der Iteration | 26.01.2024
+|===
+
+
+== Wesentliche Ziele
+//Nennen Sie 1-5 wesentliche Ziele für die Iteration.
+
+* Dokumentation (Projektplan, Iterationsplan, Risikoliste, Domänenmodell, Architektur-Notizbuch und Glossar) vervollständigen
+* Protoyp-Präsentation (vorbereiten)
+* Beleg überprüfen
+* Projektleiter für Folgesemester festlegen
+
+<<<
+
+== Aufgabenzuordnung
+//Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
+
+Die in dieser Iteration geplanten Aufgaben sind in der Work Items List dargestellt https://github.com/users/hvndead/projects/2/views/10[Work Item List - Iteration 5]
+
+_alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
+
+[%header, cols="3,3,3,3,3,1,1"]
+|===
+| Title | Assignees | Status | Priority | Iteration | gearbeitete Std. | verbleibende Std.
+| Architektur-Notizbuch erstellen | Mateo Thürig | Done | 10 | Iteration 4 | 2 | 0
+| Glossar erstellen | Yannick Birnbaum | Done | 1 | Iteration 4 | 1 | 0
+| Prototyp-Präsentation | Marc-Leon Vogt, Zakaria Lehmadi | Delay | 0 | Iteration 4 | 0 | 0
+| Domänenmodell erstellen | Marc-Leon Vogt, Yannick Birnbaum | Done | 9 | Iteration 4 | 2 | 0
+| Risiko und Gegenmaßnahmen erkennen | Johannes Hanko | Done | 6 | Iteration 4 | 2 | 0
+| Projektplan schreiben | Hai Van Nguyen | Done | 5 | Iteration 4 | 4 | 0
+| Iterationsplan erstellen | Johannes Hanko | Done | 4 | Iteration 4 | 3 | 0
+| Beleg überprüfen | Team | Done | 3 | Iteration 4 | 2 | 0
+
+|===
+
+
+
+== Probleme
+//Optional: Führen Sie alle Probleme auf, die in dieser Iteration adressiert werden sollen. Aktualisieren Sie den Status, wenn neue Probleme bei den täglichen / regelmäßigen Abstimmungen berichtet werden.
+
+[%header, cols="2,1,3"]
+|===
+| Problem | Status | Notizen
+
+| Auftraggeber krank | verschoben | Projekt-Präsentation muss auf nächstes Semester verschoben werden
+|===
+
+<<<
+
+== Bewertungskriterien
+//Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
+
+* Es wurde sich für eine neue Projektleitung für das folgende Semester entschieden, da der aktuelle Projektleiter (Wirtschaftsingenieur) das Projekt verlässt
+* Interne Protoyp-Präsentation erfolgreich durchgeführt
+* Fertigstellung der Projektdokumentation
+
+
+== Assessment
+//In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommuniziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
+
+[%header, cols="1,3"]
+|===
+| Assessment Ziel | Gesamte Iteration 5
+
+| Assessment Datum | 04.02.2024
+| Teilnehmer | Gesamtes Team
+| Projektstatus	| grün
+|===
+
+//Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
+
+//Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
+
+//Document whether you met the evaluation criteria as specified in the Iteration Plan.
+//Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
+
+//Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
+
+**Beurteilung im Vergleich zu den Zielen**
+Die wesentlichen Ziele wurden erfolgreich erreicht. Die noch ausstehende Prototyp-Präsentation für den Auftraggeber wird auf das Folgesemester verschoben.
+
+**Geplante vs. erledigte Aufgaben**
+Alle geplanten Aufgaben wurden fristgerecht abgeschlossen.
+
+**Beurteilung im Vergleich zu den Bewertungskriterien**
+Jedes Teammitglied hat fristgerecht die Aufgaben erledigt.

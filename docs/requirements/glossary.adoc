@@ -1,0 +1,79 @@
+= Glossar: {project-name}
+Johannes Hanko ; Hai Van Ngguyen ; Yannick Birnbaum ; Mateo Thürig ; Zakaria Lehmadi ; Ali Al Mahdi ; Sten Mende ; Marc-Leon Vogt
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Einführung
+In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fachdomäne) der {project-system-name} definiert. Zur besseren Übersichtlichkeit sind Begriffe, Abkürzungen und Datendefinitionen gesondert aufgeführt.
+
+== Begriffe
+[%header]
+|===
+| Begriff | Definition und Erläuterung | Synonyme
+//| Kommissionierung | Bereitstellung von Waren aus einem Lager entsprechend eines Kundenauftrags | (keine)
+| Login | Prozess des Anmeldens oder Einloggens in ein System, normalerweise durch Eingabe von Benutzername und Passwort | Anmeldung, Einloggen
+| Architektur | Beschreibt die Philosophie, Entscheidungen, Nebenbedingungen, Begründungen, wesentliche Elemente und andere übergreifende Aspekte des Systems, die Einfluss auf Entwurf und Implementierung haben. | (keine)
+| Annahmen | Voraussetzungen, die die architektonischen Entscheidungen beeinflussen. | (keine)
+| Abhängigkeiten | Faktoren, von denen die Architektur abhängig ist, wie z.B. externe Frameworks oder Datenquellen. | (keine)
+| Architekturziele und Philosophie | Ziele und zentrale Ansätze für die Architektur, die die Entwicklung beeinflussen. | (keine)
+| Architekturmechanismen | Werkzeuge oder Konzepte, die in der Architektur verwendet werden, z.B. Nutzerverwaltung oder Datenbanken. | (keine)
+| Wesentliche Abstraktionen | Schlüsselkonzepte, die die Struktur des Systems definieren. | (keine)
+| Schichten oder Architektur-Framework | Struktur oder Muster, wie die verschiedenen Systemkomponenten zusammenarbeiten. | (keine)
+| Architektursichten (Views) | Unterschiedliche Perspektiven zur Beschreibung der Softwarearchitektur, z.B. logische Sicht, physische Sicht, Use Cases. | (keine)
+| Stakeholder | Personen oder Gruppen, die ein Interesse am System haben und von diesem beeinflusst werden. | (keine)
+| Produkt-/Lösungsüberblick | Zusammenfassung der Eigenschaften und Vorteile des entwickelten Systems. | (keine)
+| Einschränkungen | Begrenzungen und Vorgaben, die die Entwicklung beeinflussen, wie z.B. genutzte Technologien oder Plattformen. | (keine)
+| Interface Requirements | Anforderungen an die Benutzeroberfläche und Schnittstellen des Systems. | (keine)
+| Rechtliche Anforderungen | Vorgaben und Regeln, die das System in rechtlicher Hinsicht erfüllen muss, z.B. Datenschutz. | (keine)
+| Risiken | Potenzielle Gefahren oder Unsicherheiten, die das Projekt beeinflussen können. | (keine)
+| Akquise |	Der Prozess des Anwerbens oder Gewinnens von Kunden, Geschäftspartnern oder Informationen, um die Ziele eines Unternehmens oder Projekts zu unterstützen. | Kundenakquise, Anwerbung
+| Virtual Machines | Virtuelle Maschinen sind Software-Emulationen von physischen Computern. Sie ermöglichen die Ausführung von Anwendungen in einer isolierten Umgebung auf einem Hostsystem. | VMs, virtuelle Server
+| Python | Eine weit verbreitete, interpretierte, objektorientierte Programmiersprache. | Python-Programmierung, PyScript
+| Framework | Ein strukturierter Ansatz oder eine Plattform, die als Grundgerüst für die Entwicklung von Softwareanwendungen dient | Entwicklungsframework, Plattform
+| Release | Die Veröffentlichung einer neuen Version von Software oder einer Anwendung, die neue Funktionen, Verbesserungen oder Fehlerkorrekturen enthalten kann. | Version, Veröffentlichung
+| Semantische Interpretation | Die Analyse und Deutung von Bedeutungen in einer strukturierten Form, oft im Kontext von Datenverarbeitung oder natürlicher Sprachverarbeitung. | Bedeutungsinterpretation
+| Datenextraktion | Der Prozess des Extrahierens von Daten aus verschiedenen Quellen oder Formaten, um sie für die weitere Verarbeitung verfügbar zu machen. | Datenextrahierung, Extraktionsprozess
+| Datenkonsistenz | Die Qualität von Daten, bei der Informationen in verschiedenen Teilen eines Systems oder einer Datenbank einheitlich und korrekt sind. | Konsistente Daten, Datenintegrität
+| Datenvalidierung | Der Prozess der Überprüfung von Daten, um sicherzustellen, dass sie den vordefinierten Anforderungen entsprechen und korrekt sind. | Validierung, Datenprüfung
+| Implementierung | Die Umsetzung oder Realisierung eines Systems, einer Anwendung oder einer Funktion auf der Grundlage von Spezifikationen oder Anforderungen. | Umsetzung, Programmierung
+| Nachrichtenaggregation | Die Sammlung und Zusammenführung von verschiedenen Nachrichten oder Informationen an einem zentralen Ort oder in einem System. | Informationsaggregation, News-Aggregation
+| Hardware | Die physischen Komponenten eines Computersystems, einschließlich Prozessor, Speicher, Festplatte, etc. | Computerhardware, Hardwarekomponenten
+| Features | Merkmale oder Funktionen einer Softwareanwendung, die sie von anderen unterscheiden und den Nutzern bestimmte Vorteile bieten. | Funktionen, Eigenschaften
+| Threads | In der Softwareentwicklung sind Threads sequenzielle Ausführungsstränge innerhalb eines Prozesses. Sie ermöglichen parallele Ausführung von Operationen und tragen zur Effizienz von Multithreading-Anwendungen bei. | Multithreading, Leichtgewichtige Prozesse 
+|===
+
+
+== Abkürzungen und Akronyme
+[%header]
+|===
+| Abkürzung | Bedeutung | Erläuterung
+//| UP | Unified Process | Vorgehensmodell für die Softwareentwicklung
+| HTW | Hochschule für Wirtschaft und Technik | Teilnehmer dieses Projektes studieren an dieser Hochschule
+| Telekom MMS | Telekom Multimedia Solutions | Auftraggeber dieses Projektes
+|===
+<<<
+== Verzeichnis der Datenstrukturen
+[%header]
+|===
+| Bezeichnung | Definition | Format | Gültigkeitsregeln | Aliase
+
+| Anmeldedaten
+| Zusammensetzung von Benutzername und Passwort.
+| String
+| Emailadresse muss `@`-Zeichen und `.` Punkt enthalten.
+| Login
+
+| SSL-Verschlüsselung
+| Eine Verschlüsselungstechnologie, die verwendet wird, um die Übertragung von Daten zwischen einem Webserver und einem Browser zu sichern.
+| -	
+| -	
+| SSL, Verschlüsselung
+
+| CRM-System
+| Ein Customer Relationship Management-System, das dazu dient, Kundenbeziehungen und -informationen zu verwalten und zu analysieren.
+| -
+| -
+| Kundenmanagement-System, CRM
+|===

@@ -1,0 +1,88 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
+
+
+== Use-Case: UC03 Benutzer anmelden
+
+=== Kurzbeschreibung
+//<Kurze Beschreibung des Use Case>
+Dieser Use Case beschreibt den Prozess, bei dem sich ein Mitarbeiter der Telekom MMS in der Anwendung anmeldet, um Zugriff auf Unternehmensinformationen suche zu erhalten.
+
+=== Kurzbeschreibung der Akteure
+
+==== Mitarbeiter der Telekom MMS
+Benötigen detaillierte Informationen zu der Firma einer Kundenanfrage.
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+
+Der Mitarbeiter hat noch keine aktive Sitzung in der Anwendung.
+Mitarbeiter wurde bereits registiert und hat die Anmeldedaten schriftlich außerhalb des Systems erhalten.
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+. Der Use Case beginnt, wenn der Mitarbeiter die Anmeldeseite öffnet.
+. Der Mitarbeiter gibt seine Anmeldedaten (Benutzername und Passwort) ein.
+. Das System überprüft die Anmeldedaten.
+. Bei erfolgreicher Authentifizierung erhält der Mitarbeiter Zugang zur Anwendung.
+. Der Use Case ist abgeschlossen.
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+
+==== <Alternativer Ablauf 1>
+Wenn der Mitarbeiter im Schritt 2 des Standardablaufs falsche Anmeldedaten eingibt, dann:
+. Das System zeigt eine Fehlermeldung an.
+. Der Mitarbeiter hat die Möglichkeit, die Anmeldedaten erneut einzugeben.
+. Der Use Case wird bei Schritt 2 des Standardablaufs fortgesetzt.
+
+
+//=== Unterabläufe (subflows)
+
+//==== Abmeldung
+//. Der Mitarbeiter klickt auf den "Abmelden"-Button in der Anwendung.
+//. Das System beendet die aktuelle Sitzung und leitet den Mitarbeiter zurück zur Anmeldeseite.
+//. Der Mitarbeiter ist nun abgemeldet und hat keinen Zugang mehr zu den Anwendungsfunktionen, bis er sich wieder anmeldet.
+
+<<<
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+
+==== Erfolgreiche Anmeldung
+. Frau Z, eine Mitarbeiterin, öffnet die Anmeldeseite.
+. Sie gibt ihre korrekten Anmeldedaten ein.
+. Das System bestätigt die Anmeldedaten und gewährt Frau Z Zugang zur Anwendung.
+. Frau Z beginnt, die Anwendung zu nutzen.
+
+==== Fehlgeschlagene Anmeldung
+. Herr W, ein Mitarbeiter, versucht sich anzumelden, gibt aber ein falsches Passwort ein.
+. Das System zeigt eine Fehlermeldung an.
+. Herr W gibt seine Anmeldedaten erneut ein, diesmal korrekt.
+. Das System gewährt Herrn W Zugang zur Anwendung.
+
+==== Erfolgreiche Abmeldung
+. Herr X, ein angemeldeter Mitarbeiter, beendet seine Arbeit in der Anwendung.
+. Er klickt auf den "Abmelden"-Button.
+. Das System meldet ihn ab und leitet ihn zur Anmeldeseite um.
+
+=== Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+
+==== Zugang zur Anwendung
+Der Mitarbeiter hat Zugang zur Anwendung und kann die Funktionen nutzen.
+
+==== Nach erfolgreicher Abmeldung
+Der Mitarbeiter hat keinen Zugang mehr zu den Anwendungsfunktionen. +
+Die Benutzersitzung ist sicher beendet, um Datenschutz und Sicherheit zu gewährleisten.
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+
+==== Sicherheit und Datenschutz
+Die Anmeldung muss sichere Authentifizierungsprotokolle verwenden, um den Datenschutz zu gewährleisten.
+
+==== Usability
+Die An-, als auch Abmeldung sollte für den Benutzer leicht zugänglich und verständlich sein.
+

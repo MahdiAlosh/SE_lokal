@@ -1,0 +1,54 @@
+.logcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* overflow: auto; */
+    margin-top: 100px;
+}
+/*
+container ist gedacht für Abbildungsplatz, gesammte Fläche 
+*/
+.logcontainer form{
+    max-width: 500px;
+    width: 100%;
+    /* min-width: 400px; */
+    padding: 15px 20px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+/*
+form: die Elemente, die im Container azfgestellt sind!
+*/
+
+.homecontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.text-center{
+    padding: 15px;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1); /*0.1 für Transparent*/
+    border-radius: 10px;
+    max-width: 600px;
+    margin-top: 100px;
+}
+
+.text-center form{
+    display: flex;
+    justify-content: center;
+}
+
+.tablecontainer{
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1); /*0.1 für Transparent*/
+    border-radius: 10px;
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+table{
+    text-align: center;
+    th {
+        text-align: center;
+    }
+}

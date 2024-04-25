@@ -1,0 +1,57 @@
+= Test Cases: {project-name}
+Johannes Hanko ; Hai Van Ngguyen ; Yannick Birnbaum ; Mateo Thürig ; Zakaria Lehmadi ; Ali Al Mahdi ; Sten Mende ; Marc-Leon Vogt
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Allgemeine Informationen
+In Test-Cases geht es im Allgemeinen darum, sicherzustellen, dass das zu testende Produkt richtig funktioniert. Daher wird mit einem Test-Case eine Anleitung für die Entwickler gegeben.
+
+== Test Cases
+
+=== Test Case: TC01: Login-Funktionalität testen
+==== Beschreibung
+Dieser Testfall prüft die Login-Funktionalität der webbasierten Anwendung. Ziel ist es zu verifizieren, dass ein Benutzer mit gültigen Anmeldeinformationen erfolgreich in das System einloggen kann und dass ein Login-Versuch mit ungültigen Anmeldeinformationen fehlschlägt. Es wird überprüft, ob die Authentifizierung korrekt funktioniert.
+
+==== Vorbedingungen
+* Die Testdatenbank ist initialisiert und läuft im Hintergrund.
+* Es gibt mindestens einen registrierten Benutzer mit bekannten Anmeldeinformationen.
+
+==== Nachbedingung
+* Bei erfolgreichem Login ist der Benutzer im System authentifiziert und die `current_user`-Variable ist auf eine instanziierte Benutzerklasse gesetzt, die den angemeldeten Benutzer repräsentiert
+* Bei einem fehlgeschlagenen Login-Versuch bleibt die `current_user`-Variable auf `None` gesetzt, und der Benutzer erhält eine entsprechende Fehlermeldung
+* Die Testdatenbank bleibt unverändert nach dem Testlauf, um die Integrität für nachfolgende Tests zu gewährleisten
+
+==== Testablauf
+1. Es wird getestet, ob die Login-Seite geladen wird
+2. Es wird ein erfogreicher Login getestet
+3. Es wird ein fehlgeschlagener Login getestet
+
+==== Testdaten
+* Registrierter Benutzer: Email: `test@example.com`, Passwort: `test`
+* Falsche Anmeldeinformationen: Email: `test@example.com`, Passwort: `wrongpassword`
+
+=== Test Case: TC02: Suchfunktionalität testen
+
+==== Beschreibung
+Dieser Testfall überprüft die Suchfunktionalität der webbasierten Anwendung. Ziel ist es, zu verifizieren, dass ein Benutzer nach der Anmeldung erfolgreich nach einem Unternehmen suchen kann und dass die Anwendung die korrekten Informationen in Form einer Infobox von Wikipedia zurückgibt. Es wird auch getestet, ob die Anwendung angemessen auf ungültige Suchanfragen reagiert.
+
+==== Vorbedingungen
+* Der Benutzer ist erfolgreich im System angemeldet.
+* Die Verbindung zur Wikipedia-API ist stabil und verfügbar.
+
+==== Nachbedingung
+* Bei einer erfolgreichen Suche wird die Infobox mit den Unternehmensinformationen angezeigt
+* Bei einer erfolglosen Suche (z.B. kein Eintrag gefunden oder ungültige Eingabe) wird eine entsprechende Fehlermeldung oder Benachrichtigung angezeigt
+* Keine Änderungen an der Benutzer-Session oder der Datenbank als Ergebnis der Suchoperation
+
+==== Testablauf
+1. Es wird getestet, ob das Suchfeld auf der Hauptseite geladen wird
+2. Es wird ein erfolgreicher Suchvorgang getestet, bei dem erwartet wird, dass die Anwendung die entsprechenden Unternehmensinformationen anzeigt
+3. Es wird ein erfolgloser Suchvorgang mit einer ungültigen Eingabe getestet, bei dem erwartet wird, dass die Anwendung eine Fehlermeldung oder Benachrichtigung anzeigt
+
+==== Testdaten
+* Gültige Suchanfrage: Unternehmensname, der in der Datenquelle vorhanden ist (Wikipedia)
+* Ungültige Suchanfrage: Ein String, der in der Datenquelle nicht vorhanden ist oder eine leere Eingabe
+

@@ -1,0 +1,164 @@
+= Projektplan: {project-name}
+Hai Van Nguyen s86039@stud.htw-dresden.de; Johannes Hanko s84268@stud.htw-dresden.de
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Einführung
+Dieser Plan umfasst die Umsetzung des {project-system-name} sowie dessen Inhalte. Ziel ist es eine webbasierte Anwendung zur Recherche von Unternehmensinformationen auf Basis von strukturierten internen Informationsquellen und internetbasierten Informationen zu implementieren. In einem seperaten Plan werden die nötigen und angewendeten Tools beschrieben.
+
+== Projektorganisation und Teammitglieder
+
+Um dieses Projekt zu ermöglichen sind unterschiedliche Rollen mit Teammitgliedern zu belegen. 
+Jeder der Bereiche hat eine Leitung sowie mindestens ein weiteres Mitlgied. Die Leitung ist dafür verantwortlich, die zugehörigen Aufgaben im Blick zu halten, welche dem Bereich zugeteilt wurden.
+Es ist jedoch möglich, dass die Mitglieder auch in anderen Bereichen unterstützen und Aufgaben übernehmen.  
+
+Unsere Rollen haben sich aus den Vorgaben des Open Unified Process ergeben:
+
+* Projekt Management
+* Requirements und Analyse
+* Architektur
+* Tests
+* Developer
+
+[cols='head,1,1,1']
+|===
+|Name |Studiengang |Rolle
+
+|Johannes Hanko
+|Wirtschaftsingenieurwesen, Austritt nach erstem Semester
+|Projekt Leitung in SE I
+
+|Hai Van Nguyen
+|Wirtschaftsinformatik
+|Projekt Management und Projekt Leitung in SE II, Requirements und Analyse
+
+|Marc-Leon Vogt
+|Wirtschaftsinformatik
+|Leitung des Requirements und Analyse Bereichs, Architektur
+
+|Mateo Thürig 
+|Wirtschaftsinformatik
+|Leitung Architektur, Requirements und Analsye
+
+|Yannick Birnbaum
+|Wirtschaftsinformatik
+|Developer, Architektur
+
+|Sten Mende
+|Wirtschaftsinformatik
+|Leitung Tester, Developer
+
+|Ali Al Mahdi
+|Wirtschaftsinformatik
+|Developer
+
+|Zakaria Lehmadi
+|Wirtschaftsinformatik
+|Leitung Developer
+|===
+
+Organsiert haben wir unsere Aufgaben und das Repository auf GitHub. Zum Repository mit den vielen unterschiedlichen Unterlagen, haben wir ein Projekt eingerichtet, indem alle unsere Aufgaben notiert und verwaltet werden können. Den einzelnen Aufgaben kann man verschiedenen Asignees und Iterationen zuordnen. Außerdem kann man so leichter erkennen, welche Aufgaben noch in Angriff genommen werden müssen und welche bereits erledigt wurden.
+Mit der Unterstützung und Mitarbeit des ganzen Teams ist es uns so gelungen, einen guten Überblick über unser Projekt zu haben. 
+
+Wichtige Termine und kurzfristige Anmerkungen klären wir über WhatsApp, in einer gemeinsamen Gruppe. Damit können wir dringliche Nachrichten oder Probleme einfach besprechen und uns gegenseitige Erinnerungen und Hinweise senden.
+
+Falls ein Teammitglied verhindert sein sollte, um an einem Meeting in Präsenz teilzunehmen, kann sich dieser online über Discord dazu schalten. Es ist eine Anwendung, in der wir uns als Team leicht verbinden und gegebenenfalls unsere Bildschirme teilen können.
+
+Mit unserem Auftragsgeber, Herr Spiegel, haben wir uns per E-Mail verständigt und Meetings über Microsoft Teams abgehalten. Dafür hat Herr Spiegel uns einen entsprechenden Gruppenraum zur Verfügung gestellt.
+
+
+== Praktiken und Bewertung
+
+Unser Team führt Praktiken nach den Open Unified Process Vorgaben durch. Zu den Management Praktiken gehört zum einen das *Iterative Development*. 
+
+Mit 14-tägigen Iterationen, welche auf auf einem aktiven Scrum Board in GitHub organsiert werden, planen wir unsere Aufgaben. Alle Iterationen sind mit der Klassifizierung I01, I02,... I[n] benannt. Der Umgang mit GitHub und den weiteren Funktionen wie Issues umsetzen oder Iterationen erstellen, hat unser Team im SE I Praktikum gelernt. Aufgaben (Issues) können dann im Scrum Board zwischen "Todo", "In Progress" oder "Done" hin und her geschoben werden um den Fortschritt zu signalisieren.
+
+Unsere Team-Meetings haben in SE I wöchentlich dienstags, wenn möglich in Präsenz stattgefunden. Zu Beginn jeder Iteration wird die Todo Liste des Scrum Boards mit den Aufgaben, die wir in dem Zeitraum erreichen wollen, gefüllt. Bei jedem weiteren Meeting werden die Fortschritte erneut besprochen, wenn nötig weitere Issue erstellt und Meinungen/Risiken festgehalten.
+
+Pro Iteration gab es auch mindestens ein Meeting mit unserem Auftraggeber, um unsere erreichten Ziele zu präsentieren und Fragen zu klären. 
+
+Aller zwei Iterationen gab es auch ein Meeting mit unserem Coach, Herr Zirkelbach, um allgemeine Fragen zum Beleg zu klären oder ein Feedback zu unserer Arbeit zu bekommen.
+
+Das Iterative Development ermöglicht es uns flexibel schnelle Anpassungen an sich ändernde Umstände zu machen. Aufgaben können in kleine Teile aufgeteilt werden, um die Umsetzung zu erleichtern und trotzdem nebenbei eine überschaubare Übersicht beizubehalten.
+Innerhalb des Teams können wir uns auf diese Weise gegenseitig auf dem neusten Stand halten und optimal miteinander arbeiten.
+
+Eine weitere Management Praktik, welche wir anwenden, ist der *Risk-Value Lifecycle*.
+Ziel dabei ist es, Risiken zu minimieren, indem das Projekt in Phasen (Iterationen) unterteilt wird und am Ende über den Fortgang des Projektes entschieden wird. So können die Risiken jeder Iteration einfacher erkannt und vermieden werden. Gleichzeitig erhöht sich damit der Wert des Projekts.
+So haben wir insbesondere Missverständnisse vermieden, da wir Aufgaben nacheinander abhaken konnten.
+
+Zu den technischen Praktiken gehören bei uns die Shared Vision, das Use Case Driven Development und die Evolutionary Architechture.
+
+Die *Shared Vision* identifiziert alle Stakeholder, hilft dabei das Problem zu lösen, also eine webbasierte Anwendungen zur Unternehmenssuche zu schaffen, indem alle Stakeholder ihre Funktionen erfüllen können. Wir können damit effektiv planen und die Entwicklung unseres Projektes überwachen.
+
+Das *Use Case Driven Development* hilft uns dabei, die wichtigen Aufgaben und Anforderungen im Blick zu behalten. 
+Die Ziele werden zuerst erfasst und dann werden dazu Szenarien erstellt welche die Stakeholder in verschiedenen Situationen darstellen. 
+
+Zuletzt nutzen wir die *Evolutionary Architecture*, um die Herausforderung von Design und Implementierung in den Griff zu bekommen und ein lauffähiges System zu entwickeln. Weiterhin können Risiken damit berücksichtigt und vermieden werden. Es bildet die Grundlage und Kontext für unsere Developer und eine schrittweise Anleitung, wie sie vorgehen sollen. 
+
+<<<
+    
+== Meilensteine und Ziele
+
+[%header, cols="1,3a,2"]
+|===
+| Iteration
+| Primäre Ziele +
+(Risiken und Use Case Szenarios)
+| Geplanter Start und Ende
+
+| I01
+|
+* Gruppenfindung, Kennenlernen und Rollen verteilen
+* Kontaktaufbau mit Auftraggeber bei TMMS 
+* Thema und Problem verstehen
+* Kontakt zu Coach 
+* Mit Techniken vertraut machen
+| Vom 06.11.2023-20.11.2023
+
+| I02
+|
+* Ersten Entwurf der Vision erfassen
+* Use Cases aufstellen
+* Vision und Use Cases von Auftraggeber bestätigen lassen
+* Mit Architecture Notebook auseinandersetzen
+| Vom 20.11.2023-04.12.2023
+
+| I03
+|
+* Risikoliste erfassen
+* Vision und Use Cases fertigstellen
+* Einarbeitung von Vision und Use Cases in Architektur
+* Finalisierung nach Meeting mit Coach und Auftraggeber
+* 
+| Vom 04.12.2023-18.12.2023
+
+| I04
+|
+* Aufstellen des ersten Prototyps
+* Ausarbeitung der Test Cases 
+* Überarbeitung unserer Dokumente
+| 08.01.2024-22.01.2024
+
+| I05
+|
+* Demonstration unseres Prototyps bei Prof. Anke
+* Finalisieren unserer Test Cases und Dokumente
+* Abgabe Beleg
+| 22.01.2024-26.01.2024
+|===
+
+<<<
+
+== Deployment
+
+Das fertiggestellte System soll künftig auf den Servern der Telekom MMS betrieben werden. Es ist eine Anbindung an die Telekom MMS Datenbank geplant. 
+
+== Erkenntnisse (Lessons learned)
+
+* Stetige Kommunikation mit dem Auftraggeber ist wichtig um die Anforderungen erfüllen zu können.
+* Teamarbeit ist sehr effizient und macht Spaß, wenn sich abgesprochen wird und Aufgaben gut verteilt werden.
+* Kommunikation innerhalb des Teams genauso wichtig, hilfreich um Probleme schneller zu lösen.
+* Regelmäßige Meetings mit Auftraggeber, Techick Tutor und Coach aber auch als Team sinnvoll um Projekt im Überblick zu behalten.
+* Wir sind noch lange nicht erfahren genug um solch ein Projekt selbstständig zu erarbeiten und auch allen Anforderferungen zurecht zu kommen. Trotzdessen lernen wir auf dem Weg und sammeln Erfahrungen für die Zukunft.

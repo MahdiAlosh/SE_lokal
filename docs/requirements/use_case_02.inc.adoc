@@ -1,0 +1,86 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
+
+
+== Use-Case: UC02 Unternehmensinformationen anzeigen
+
+=== Kurzbeschreibung
+//<Kurze Beschreibung des Use Case>
+Dieser Use Case beschreibt das Anzeigen von detaillierten Informationen zu einem ausgewählten Unternehmen aus gegebenen Quellen nach einer Suchanfrage.
+
+=== Kurzbeschreibung der Akteure
+
+==== Mitarbeiter der Telekom MMS
+Benötigen detaillierte Informationen zu der Firma einer Kundenanfrage.
+
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+
+Der Telekom MMS Mitarbeiter muss in der Anwendung angemeldet sein.
+Der Telekom MMS Mitarbeiter hat eine erfolgreiche Suche durchgeführt. 
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+. Der Use Case beginnt, wenn der Mitarbeiter ein Suchergebnis auswählt.
+. Das System aggregiert und präsentiert relevante Informationen zum Suchergebnis.
+. Der Mitarbeiter erhält eine strukturierte Ansicht der Unternehmensinformationen. +
+a. Informationsfilterung der Wikipedia Informationsbox
+//b. Auflistung interner Infromationen der Telekom MMS zum Suchergebnis
+//c. Auflistung aktueller Nachrichten des Suchergebnisses
+//d. Einbindung eines Sprchassisteneten mit Hilfe von Chat Gpt 
+. Der Use Case ist abgeschlossen.
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+
+==== Unvollständige oder fehlende Unternehmensinformationen
+Wenn der Mitarbeiter im Schritt 1 des Standardablaufs ein Unternehmen auswählt, aber das System nicht alle angeforderten Informationen bereitstellt, dann:
+
+. Identifiziert das System, welche Informationen fehlen oder unvollständig sind.
+. Anstelle der vollständigen Informationsanzeige zeigt das System die verfügbaren Daten und informiert den Mitarbeiter über die fehlenden Informationen.
+. Der Mitarbeiter hat die Option, entweder eine neue Suche durchzuführen oder ein anderes Unternehmen aus den Suchergebnissen auszuwählen.
+. Der Use Case wird bei Schritt 1 des Standardablaufs fortgesetzt, falls der Mitarbeiter sich für eine neue Suche entscheidet.
+
+
+//=== Unterabläufe (subflows)
+//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+
+//==== <Unterablauf 1>
+//. <Unterablauf 1, Schritt 1>
+//. …
+//. <Unterablauf 1, Schritt n>
+
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+<<<
+=== Wesentliche Szenarios
+
+==== Vollständige Informationsanzeige
+. Herr X, ein Mitarbeiter, wählt aus den Suchergebnissen die Deutsche Telekom AG aus.
+. Das System erkennt die Auswahl und sammelt alle verfügbaren Informationen über die Deutsche Telekom AG.
+. Das System zeigt eine vollständige Übersicht der Informationen an, einschließlich Wikipedia-Infobox, Umsatzdaten und aktuellen Nachrichten.
+. Herr X verwendet diese Informationen, um seine Kundenanfrage zu bearbeiten.
+
+==== Umgang mit fehlenden Informationen
+. Frau Y, eine Mitarbeiterin, sucht Informationen zu einem kleinen, weniger bekannten Unternehmen.
+. Sie wählt das Unternehmen aus den Suchergebnissen aus.
+. Das System stellt fest, dass nicht alle Informationen verfügbar sind.
+. Das System zeigt die verfügbaren Informationen an und informiert Frau Y über die fehlenden Daten.
+. Frau Y entscheidet sich daraufhin, eine neue Suche nach einem ähnlichen Unternehmen zu starten.
+
+
+=== Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+
+==== Umfassende Informationsbereitstellung
+Der Benutzer erhält umfassende und aktuelle Unternehmensinformationen.
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+
+==== Datenintegration und -darstellung
+Die Anwendung muss in der Lage sein, die Daten effizient zu integrieren und benutzerfreundlich darzustellen.
+
+==== Performance
+Die strukturierte Auflistung der Unternehmensinformationen muss innerhalb von 5 Sekundenn erfolgen.

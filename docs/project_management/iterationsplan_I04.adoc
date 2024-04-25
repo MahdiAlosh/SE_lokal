@@ -1,0 +1,95 @@
+= Iteration Plan I04: {project-name}
+Hai Van Nguyen s86039@stud.htw-dresden.de; Johannes Hanko s84268@stud.htw-dresden.de;
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Meilensteine
+//Meilensteine zeigen den Ablauf der Iteration, wie z.B. den Beginn und das Ende, Zwischen-Meilensteine, Synchronisation mit anderen Teams, Demos usw.
+
+[%header, cols="3,1"]
+|===
+| Meilenstein | Datum
+
+| Beginn der Iteration | 08.01.2024
+| Ende der Iteration | 21.01.2024
+|===
+
+
+== Wesentliche Ziele
+//Nennen Sie 1-5 wesentliche Ziele für die Iteration.
+
+* Umsetzung der Wireframes
+* Ersten Projektprotoypen fertigstellen
+* Test Cases erstellen
+* Überarbeitung Use Cases und Vision
+* Ausarbeitung systemweite Anforderungen
+* Projektbesprechung mit Auftraggeber
+* Test Cases erstellen
+
+<<<
+
+== Aufgabenzuordnung
+//Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
+
+//== Probleme
+//Optional: Führen Sie alle Probleme auf, die in dieser Iteration adressiert werden sollen. Aktualisieren Sie den Status, wenn neue Probleme bei den täglichen / regelmäßigen Abstimmungen berichtet werden.
+
+Die in dieser Iteration geplanten Aufgaben sind in der Work Items List dargestellt https://github.com/users/hvndead/projects/2/views/9[Work Item List - Iteration 4]
+
+_alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
+
+[%header, cols="3,3,3,3,3,1,1"]
+|===
+| Title | Assignees | Status | Priority | Iteration | gearbeitete Std. | verbleibende Std.
+| Anpassung der Kurzbeschreibungen bei den Use Cases | Marc-Leon Vogt | Done | 7 | Iteration 4 | 2 | 0
+| Umsetzung der Wireframes im Prototyp Frontend | Ali Al Mahdi | Done | 8 | Iteration 4 | 2 | 0
+| Anpassung der Kurzbeschreibung bei der Vision | Hai Van Nguyen, Johannes Hanko | Done | 6 | Iteration 4 | 1 | 0
+| Erstellung von Test Cases | Sten Mende | Done | 7 | Iteration 4 | 2 | 0
+| Umsetzung des Prototyps Backend | Zakaria Lehmadi | Done | 10 | Iteration 4 | 8 | 0
+| Überarbeitung der Use Cases | Sten Mende | Done | 6 | Iteration 4 | 1 | 0
+| Definition systemweiter Anforderungen | Mateo Thürig, Yannick Birnbaum | Done | 8 | Iteration 4 | 3 | 0
+
+|===
+
+
+== Bewertungskriterien
+//Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
+
+* Die Anpassungen an den Use Cases und der Vision wurden vollständig umgesetzt.
+* Die Wireframes im Prototyp Frontend wurden erfolgreich umgesetzt.
+* Test Cases wurden vollständig erstellt.
+* Der Prototyp Backend wurde erfolgreich umgesetzt.
+* Die Überarbeitung der Use Cases wurde abgeschlossen.
+* Die systemweiten Anforderungen wurden definiert.
+
+== Assessment
+//In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommuniziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
+
+[%header, cols="1,3"]
+|===
+| Assessment Ziel | Gesamte Iteration 4
+
+| Assessment Datum | 21.01.2024
+| Teilnehmer | Gesamtes Team
+| Projektstatus	| grün
+|===
+
+//Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
+
+//Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
+
+//Document whether you met the evaluation criteria as specified in the Iteration Plan.
+//Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
+
+//Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
+
+**Beurteilung im Vergleich zu den Zielen**
+Die wesentlichen Ziele wurden erfolgreich erreicht.
+
+**Geplante vs. erledigte Aufgaben**
+Alle geplanten Aufgaben wurden fristgerecht abgeschlossen.
+
+**Beurteilung im Vergleich zu den Bewertungskriterien**
+Jedes Teammitglied hat fristgerecht die Aufgaben erledigt.

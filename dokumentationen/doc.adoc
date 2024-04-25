@@ -1,0 +1,387 @@
+# Dokumentationen Teammeetings
+
+== Erstes Teammeeting
+Sitzungs Beginn 15:30 Uhr
+
+Alle Leute sind im GitHub Repository und in dem Projekt
+
+.1 Rollenverteilung
+
+Projekt Leitung: Hai Van Nguyen und Johannes Hanko (für ein Semester)
+Requirements & Analyse:Mateo, Johannes, Hai Van, Marc
+Architect: Mateo, Marc
+Tester: Sten, Ali, Zakaria
+Developer:Zakaria, Ali, Yannick
+
+.2 Verständnis zum Thema
+
+Fürs erste -> Eine webbasierte Anwendung für Unternehmensinformation
+Eine einfache Such Leiste wie bei Google wie man den Namen der Firma reinschreiben kann und es dir die einfachen Informationen aus der Wikipedia InofBox strukturiert in einer Tabelle ausgeben.
+
+Betriebsoberfläche mit Python Flask
+
+.3 Aufgaben bis zur nächsten Wochen 
+
+Phyton lernen mit Kaggl -> https://www.kaggle.com/learn
+Intro to Programming, Python, Pandas, Intro to SQL, Advanced SQL
+
+Auf Opal -> Python Kurs von Robert Ringel und Anja Hamann
+
+Wöchentlicher Termin Dienstag 15 Uhr
+
+Sitzungs Ende 16:25 Uhr
+
+== Erstes Meeting mit Zirkelbach
+Wir sollen Haupftverantwortliche festlegen, auch wenn man in mehreren Abteilung aktiv ist.
+
+Ziel ist dass wir alle mal in alle Rollen mal reinschaune können und wir aber trz unsere Hauptrollen haben.
+
+Bis Ende SE I soll ein Prototyp schon stehen, und die wichtigsten Merkmale schon eingebaut werden.
+
+Dokumentation soll komplett mit Asciidoc durchgeführt werden, welche alle bereits im Repository vorhanden sind.
+
+Sollen wir die Daten die wir bereits mal von WIkipedia rausgefiltert haben in einer Datenbank speichern ? -> Herr Spiegel
+
+Iterations plan aufstellen. (Enden und starten wahrscheinlich immer am Dienstag zum Teammeeting)
+Projekt Plan, Risiko Liste, Open Up nochmal anschauen und auf das Team übertragen
+
+Soll es auf einem lokalen Server oder auf einem externen Server laufen? -> Herr Spiegel
+
+Man kann sich bei Herr Zirkelbach ein Server ausleihen, je nachdem wie es nach TMMS laufen soll
+Welche Computer Strukutr (WIndows, Linux) was bei der TMMS benutzt wird
+
+
+== Zweites Teammeeting
+
+Sitzungs Beginn 17.11.2023 13:20 Uhr
+
+- Johannes informiert über Inhalte des letzten Meetings mit Herr Zirkelbach
+
+- Stand bei Kaggle-Kursen: Python Kurse abgeschlossen 
+
+- Wissen daraus: Syntax Python Grundwissen
+- Wissen über die zu verwendende Bibliothek Panadas für das Projekt
+
+Festelegen der Todos/Agenda bis zum nächsten Meeting 
+
+Aktualisierung Projektname in includes 
+
+Daten von pentapad zu repository transferiert 
+
+
+
+
+ToDo's bis 21.11.2023
+Überlegungen zu vision.adoc 
+heißt: Welches Problem?
+Für wen die Anwendung ?
+Vorteile gegenüber ist Zusand?
+Wer sind die Stakeholder?
+
+
+
+
+
+Agnenda für Drittes Meeting 21.11.2023 15:00 Uhr
+
+Besprechung vision.adoc 
+
+Fragenkatalog: für Meeting mit Herrn Spiegel
+
+Iterationsschritt 2 anlegen 
++ todos     
+(vison erstellen, fragen zu vison am Freitag anbringen)
+
+Entscheidungsgewalt Rollen festlegen 
+
+Kaggle Sql Kurse besprechen 
+
+
+Sitzungs Ende: 17.11.2023 14:05 Uhr
+
+
+== Team Meeting 21.11.2023 15:30
+
+Kaggle Kurs bis Freitag 24.11.
+
+Leitung Projektmanagment: Johannes
+
+Requirements/Analyse: Marc
+
+Architekt: Mateo
+
+Developer: Zakaria
+
+Tester: Sten
+
+Dienstag 28.11. Zakaria erklärt 15-20 min Python.
+
+=== Vision.adoc vervollständigen
+
+Ali: Zusätzliche Produktanforderungen
+
+Sten: Problem Statement
+
+Haivi: Stakeholder
+
+Zakaria: Bedarfe und Hauptfunktionen
+
+Marc: Benutzerumgebung
+
+Johannes: Positionierung des Produktes
+
+=== Fragen an den Kunden (Herr Spiegel)
+
+Sollen wir die Daten die wir bereits mal von Wikipedia rausgefiltert haben in einer Datenbank speichern ?
+
+Soll es auf einem lokalen Server oder auf einem externen Server laufen?
+
+was empfehlen Sie noch was anderes über Python zu lernen?
+
+Genauer die Stakeholder definieren.
+
+Fragen zu Vison??
+
+=== Iterationsschritt 2
+
+Issues festgelegt
+
+=== Agenda 4. Meeting
+
+Zakaria 15-20 min Phython erklären
+
+Auswertung Spiegel und Anpassungen
+
+Virtuelle Maschinen?
+
+Vision durchsprechen
+
+Besprechung Beleg
+
+Meeting Ende: 17:30 Uhr
+
+== Meeting 4 28.11.2023 15:30 Uhr
+
+Auswertung Gespräch Spiegel
+
+Virtuelle Maschine Passwort ändern
+
+Login im Terminal: ssh seproject@iseproject07e.informatik.htw-dresden.de
+
+Passwort: '!(1%B6ue4*3
+
+Nur in VPN oder mit SSH-Tunnel über die ilux150 erreichen
+
+Zakaria kurze Vorstellung von Python
+
+=== Big-Query
+
+console.cloud.google.com
+
+Google-Konto einloggen
+
+Neues Projekt erstellen
+
+Projekt auswählen
+
+Big Query API aktivieren
+
+Ein neuen Datensatz erstellen
+
+Region unwichtig (US)
+
+Dann neue Tabelle erstellen (unter den 3 Punkten oder mit SQL Befehlen)
+
+Öffentliches Projekt hinzufügen: Hinzufügen und dann 'Öffentliche Datensätze' suchen (mit public eingeben)
+
+Marktplatz suchen: USA Namen und dann Datensatz Anzeigen
+
+Nach Tabelle USA-Namen suchen 2 Tabellen
+
+Neues Query und dort SELECT * FROM 'bigquery-public-dataset.usa_names.usa_1910_2013' limit 10 (am besten kopieren)
+
+Python mit BigQuery verbinden: Dafür braucht man einen Key
+
+Ganz oben auf Menü -> IAM und Verwaltung -> Dienstkunden -> Neues Dienstkonto erstellen -> Name -> Erstellen und fortfahren 
+
+Zugriff: Rolle: Basic: Inhaber -> Weitermachen -> OK
+
+Rechts 3 Punkte -> Schlüssel verwalten -> Schlüssel erstellen -> JSON -> Ablageort Ordner zb Python nennen -> schließen
+
+
+In Extentions Python runterladen und VS Code Neustarten
+
+VS Code öffnen-> Verzeichnis (python) öffnen: Schlüsseldatei muss da stehen -> Neue Datei erstellen (' '.py) -> Terminal öffnen -> pip install google-cloud-bigquery -> ausführen
+
+Python Datein öffen -> from google.cloud import bigquery
+
+import os
+
+os.environ['GOOGLE_APPLICATION_CREDENTIALS']='adept-snow-405323-33850f24977e.json' 
+
+(Schlüssel mit BigQuery verbunden)
+
+sql_query="""
+SELECT * 
+FROM 'bigquery-public-dataset.usa_names.usa_1910_2013' LIMIT 10
+"""
+
+query_job=client.query(sql_query)
+
+for row in query_job.result() :
+
+print(row)
+
+=== Agenda Meeting 5
+
+Use Cases ausdenken
+
+=== Meeting 5
+
+05.12.2023 15:45 Uhr
+
+Besprechung der Themen in Iteration 3
+
+.Virtual Maschine: wie fahren wir fort? 
+
+Besprechnung über mögliche Fragen an Herren Spiegel
+
+
+
+
+
+Use case Evaluierung 
+
+
+
+
+Fragen an Herrrn Spiegel:
+- haben sie hinweise zu der vision?
+- anmerkungen von use cases?
+- Gibt es noch mehr use cases?
+- Wie funktioniert das mit den Nutzerkonten? 
+- Sollen wir da eine eigene Oberfläche bauen? 
+- Wireframes Anmerkungen?
+Welche Daten wie aufgelistet werden?
+Preferenz wie wir die Daten von der Wikipedia seite auslesen und strukturieren sollen?
+Erwehnung VM + zusenden der Zugangsdaten
+- Ob jedes mal Pdf zum Meeting per Mail oder ob GitHUb Zugang reicht
+
+Anfragen Coach Meeting 
+Fragen zu VM 
+Wie können wir darauf arbeiten?
+
+
+Ende Meeeting 
+
+=== Meeting 6
+
+12.12.2023  15:40 Uhr
+
+Wiederholung Meeting Auftraggeber
+
+=== 2. Meeting Herr Zirkelbach
+
+12.12.2023 16 Uhr
+
+Durchgehen von Use Cases.
+
+Gibt es auch eine Abmeldung?
+
+Bei Use Cases immer Substantiv und Verb
+
+Liste der Use-Cases in Use-Case-Model nach Wichtigkeit sortiert
+
+Use-Case 5 in Unternehmensinformationen anzeigen Use Case
+
+Use-Case Graphik Unternehmensinformationen anzeigen auch von MMS Mitarbeiter
+
+Wer ist der Systemadmin?
+
+Ist die Unternehmenssuche oder die Anmeldung wichtiger? (1 am wichtigsten)
+
+Wenige Use-Cases sind auch ok (Use Cases kürzen aber nochmal Abgleichen mit Herrn Spiegel)
+
+Vision: Stakeholder gibt es keine Administratoren (IT-Abteilung)
+
+Zugang auf interne Informationen? Direkt aus Excel-Tabelle oder aus in gespeicherter Datenbank
+
+Datenaktualisierung in Use-Cases übernehmen (keine Priorisierung)
+
+Ist es auch auf Mobilen Geräten nutzbar?
+
+Hörbeeinträchtigung in Vision wieder rausnehmen (ist schon entfernt)
+
+Github View umbenennen
+
+In Github TODO's feiner machen und die Assignees besser zuordnen (geht auch keine Assignees)
+
+Termin mit Coach (durchführen) ausmachen
+
+Jeder soll was zutun haben, detailierte Aufgaben
+
+Wie sollen wir mit der Virtuellen Maschine anfangen?
+
+Mit Django? Mit Auftraggeben absprechen
+
+Es sollen sich Leute mehr mit der Technik vertraut machen
+
+Meeting Ende 16:55 Uhr
+
+== Meeting 7
+
+10.01. 13 Uhr über BBB
+
+Prototyp steht, Zakaria und Ali arbeiten am 11.01 daran weiter
+
+Meeting mit RUben vereinbaren
+
+nächstes Meeting einarbeitung von allen in den Prototyp 
+
+== Meeting 8 
+
+17.01.2024 13:30 Uhr 
+
+klären was für Aufgaben noch für den Beleg erledigt werden müssen.
+Use Cases und Vision fertig.
+Bei Architecture Notebook fehlen noch ein paar Themen.
+
+== Meeting mit Ruben um 14 Uhr 
+
+Wir haben ihm unseren Prototypen gezeigt
+Er hat uns Tipps für die Prototyp Präsentation gegeben.
+Wir sollen es vorab schonmal ausprobieren.
+Wir haben eine lokale Datenbank
+
+Architecture Notebook Sichten
+
+Erstest Betrachtungslevel
+
+Das System ist vorhanden -> BlackBox
+welche beziehungen/Kommunikationen sind daran verknüpft? Also an Excel Schnittstelle? Benutzergruppe
+Was soll das System noch können? EMail schicken -> mit Email System verknüpfen
+Was kann noch auf uns zukommen? das muss alles dokumentiert werden in welchen Rahmen wir uns befinden.
+Dokumentation von dem was sein könnte.
+
+Zweites Betrachtungslevel
+
+von Außen betrachtet der Container
+Search Controllor, Anmelde Controller, Datenbank Controller
+welche Komponenten existieren in unserem System
+
+etc. 
+
+== Letztes Meeting in SE I
+
+Beginn: 15:30 Uhr 
+
+Besprochen was wir jetzt alles haben und was noch benötigt wird.
+Sind mit allem fast fertig. Feinschliff fehlt.
+
+Machen noch Themenübergreifend einen Check im Entwurf, der Technischen Spezifikation und dem Projekt Management.
+Bis Donnerstag 25. Januar
+
+Kurz besprochen ob die Präsentation für Prototyp passt.
+
+Ende Meeting 16:30 Uhr
+
