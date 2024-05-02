@@ -3,53 +3,57 @@
 %}
 
 <div class="homecontainer">
-<!-- 15.01, 22:18 -->
+  <!-- 15.01, 22:18 -->
   <div class="text-center">
-    <h1 align="center" style="font-family: sans-serif; font-size: 30px; font-weight: 600;">Welcome to the Searchbar!</h1>
-    <hr style="height: 10px;">
+    <h1
+      align="center"
+      style="font-family: sans-serif; font-size: 30px; font-weight: 600"
+    >
+      Welcome to the Searchbar!
+    </h1>
+    <hr style="height: 10px" />
 
     <!-- Suchfeld hinzufügen -->
     <form class="form-inline" id="searchForm" method="POST" action="/search">
-        <div class="input_search_container">
-          <input
-              class="form-control mr-sm-2"
-              type="text"
-              placeholder="Enter name of Company"
-              name="eingabe"
-              id="companyName"
-              onkeyup="updateInputValue(this.value)">
-          <div id="dropdown_container"></div>
-        </div>
-        
+      <div class="input_search_container">
+        <input
+          class="form-control mr-sm-2"
+          type="text"
+          placeholder="Enter name of Company"
+          name="eingabe"
+          id="companyName"
+          onkeyup="updateInputValue(this.value)"
+        />
+        <div id="dropdown_container"></div>
+      </div>
 
-        <!-- onkeyup gleichzeitig eingabe speichern -->
-        <!-- <button
+      <!-- onkeyup gleichzeitig eingabe speichern -->
+      <!-- <button
             id="search"
             class="btn btn-outline-success my-2 my-sm-0"
             type="button"
             onclick="submitForm()"
         > -->
-        <button
-            
-            class="btn btn-outline-success my-2 my-sm-0"
-            type="submit"
-        >
-            Go!
-        </button>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+        Go!
+      </button>
     </form>
   </div>
 </div>
-    <!-- Zeige die Tabelle an, wenn vorhanden -->
-  {% if infobox_data %}
-  <div class="homecontainer">
-    <div class="tablecontainer d-flex justify-content-center"
-          style="margin-top: 20px;
-          border-collapse: collapse;
-          width: 100%;
-          overflow-y: auto;
-          max-height: 50vh;">
-        {{ infobox_data|safe }}
-    </div>
+<!-- Zeige die Tabelle an, wenn vorhanden -->
+{% if infobox_data %}
+<div class="homecontainer">
+  <div
+    class="tablecontainer d-flex justify-content-center"
+    style="
+      margin-top: 20px;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-y: auto;
+      max-height: 50vh;
+    "
+  >
+    {{ infobox_data|safe }}
   </div>
-  {% endif %}
-{% endblock %}
+</div>
+{% endif %} {% endblock %}
