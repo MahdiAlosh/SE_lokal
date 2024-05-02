@@ -10,20 +10,29 @@
 
     <!-- Suchfeld hinzufügen -->
     <form class="form-inline" id="searchForm" method="POST" action="/search">
-        <input
-            class="form-control mr-sm-2"
-            type="text"
-            placeholder="Enter name of Company"
-            name="eingabe"
-            id="companyName"
-            onkeyup="updateInputValue(this.value)" 
-        />
+        <div class="input_search_container">
+          <input
+              class="form-control mr-sm-2"
+              type="text"
+              placeholder="Enter name of Company"
+              name="eingabe"
+              id="companyName"
+              onkeyup="updateInputValue(this.value)">
+          <div id="dropdown_container"></div>
+        </div>
+        
+
         <!-- onkeyup gleichzeitig eingabe speichern -->
-        <button
+        <!-- <button
             id="search"
             class="btn btn-outline-success my-2 my-sm-0"
             type="button"
             onclick="submitForm()"
+        > -->
+        <button
+            
+            class="btn btn-outline-success my-2 my-sm-0"
+            type="submit"
         >
             Go!
         </button>

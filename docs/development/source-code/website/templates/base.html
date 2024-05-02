@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width initail-scale=1" />
     <link rel="stylesheet" href="static/style.css">
+    
     <!-- vernetzen css Datei mit HTML -->
     <link
       rel="stylesheet" 
@@ -88,24 +89,7 @@
     
     <!-- CSS framwork: bootstrap -->
     {% block javascript %}
-      <script>
-      function submitForm() {
-        var companyName = document.getElementById('companyName').value;
-        if (companyName.trim() !== '') {
-            document.getElementById('searchForm').submit();
-        } else {
-            alert('Please enter a valid company name.');
-        }
-      }
-    </script> 
-    <script>
-      function updateInputValue(value) {
-      userInput = value;
-      console.log(userInput); // Hier kannst du die Eingabe in der Konsole anzeigen
-    }
-
-    </script>
-    <!-- <script src="static/dummy.js"></script> -->
+    <script src="static/index.js"></script>
     {% endblock %}
   </body>
 </html>
